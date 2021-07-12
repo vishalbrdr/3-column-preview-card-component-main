@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f2f2f2;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+}
+
+.cards-container {
+  display: flex;
+  margin: 5rem auto;
+  justify-content: center;
+}
+
+@media (max-width: 775px) {
+  .cards-container {
+    flex-direction: column;
+    margin-top: 5rem;
+  }
+}
+
+.cards-container .card {
+  min-width: 250px;
+  height: 60vh;
+  max-height: 500px;
+  width: 20vw;
+  max-width: 300px;
+  color: rgba(255, 255, 255, 0.75);
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 775px) {
+  .cards-container .card {
+    width: 300px !important;
+  }
+}
+
+.cards-container .card-name {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 1.6rem;
+  color: #f2f2f2;
+  margin: 1.5rem 0;
+}
+
+.cards-container .card-description {
+  margin-bottom: auto;
+}
+
+.cards-container .card-btn {
+  font-family: inherit;
+  background-color: #f2f2f2;
+  border: none;
+  justify-self: flex-end;
+  padding: 12px 25px;
+  border-radius: 30px;
+  border: 2px solid rgba(255, 255, 255, 0.75);
+  transition: background-color 300ms ease-out;
+  cursor: pointer;
+}
+
+.cards-container .card-btn:hover {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.75) !important;
+}
+
+.cards-container .card-1 {
+  background-color: #e38826;
+  border-radius: 10px 0 0 10px;
+}
+
+.cards-container .card-1 .card-btn {
+  color: #e38826;
+}
+
+@media (max-width: 775px) {
+  .cards-container .card-1 {
+    border-radius: 10px 10px 0 0;
+  }
+}
+
+.cards-container .card-2 {
+  background-color: #006970;
+}
+
+.cards-container .card-2 .card-btn {
+  color: #006970;
+}
+
+.cards-container .card-3 {
+  background-color: #004241;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.cards-container .card-3 .card-btn {
+  color: #004241;
+}
+
+@media (max-width: 775px) {
+  .cards-container .card-3 {
+    border-radius: 0 0 10px 10px;
+  }
+}
+
+.attribution a {
+  text-decoration: none;
+  color: #e38826;
+  padding: 2px 5px;
+  transition: all 100ms ease-in-out;
+  border-radius: 10px;
+}
+
+.attribution a:hover {
+  background-color: #e38826;
+  color: #f2f2f2;
+}
